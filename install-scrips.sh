@@ -60,6 +60,10 @@ read INPUT_STRING
   case $INPUT_STRING in
 	y)
 		echo "Chrooting.."
+		mkdir /mnt/tmp/install
+		cp post-chroot.sh /mnt/tmp/install/post-chroot.sh
+		cp pkglist.sh /mnt/tmp/install/pkglist
+		cp aurlist.sh /mnt/tmp/install/aurlist
 		arch-chroot /mnt
 		echo "Done!"
 		break

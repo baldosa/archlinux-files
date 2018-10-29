@@ -129,37 +129,11 @@ pacman -S - < pkglist
 
 #aur packages
 
-git clone https://aur.archlinux.org/dunstify.git
-cd dunstify
-makepkg -si
-
-git clone https://aur.archlinux.org/lightdm-slick-greeter.git
-cd lightdm-slick-greeter
-makepkg -si
-
 git clone https://aur.archlinux.org/pakku.git
 cd pakku
 makepkg -si
 
-git clone https://aur.archlinux.org/polybar-git.git
-cd polybar-git
-makepkg -si
-
-git clone https://aur.archlinux.org/sensei-raw-ctl-git.git
-cd sensei-raw-ctl-git
-makepkg -si
-
-git clone https://aur.archlinux.org/siji-git.git
-cd siji-git
-makepkg -si
-
-git clone https://aur.archlinux.org/trizen.git
-cd trizen
-makepkg -si
-
-git clone https://aur.archlinux.org/i3lock-fancy-git.git
-cd i3lock-fancy-git
-makepkg -si
+pakku -S - < aurlist
 
 #add user
 read -p 'Select username: ' USERNAME
