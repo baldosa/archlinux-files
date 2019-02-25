@@ -129,11 +129,11 @@ pacman -S - < pkglist
 
 #aur packages
 
-git clone https://aur.archlinux.org/pakku.git
-cd pakku
+git clone https://aur.archlinux.org/yay.git
+cd yay
 makepkg -si
 
-pakku -S - < aurlist
+yay -S - < aurlist
 
 #add user
 read -p 'Select username: ' USERNAME
